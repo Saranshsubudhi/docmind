@@ -7,6 +7,7 @@ import {
 } from "@/components/attachment";
 import { ThreadFollowupSuggestions } from "@/components/follow-up-suggestions";
 import { MarkdownText } from "@/components/markdown-text";
+import { MessageSources } from "@/components/rag/sources";
 import {
   Reasoning,
   ReasoningContent,
@@ -342,6 +343,7 @@ const AssistantMessage: FC = () => {
             }
           }}
         </MessagePrimitive.GroupedParts>
+        <MessageSources />
         <MessageError />
       </div>
 
